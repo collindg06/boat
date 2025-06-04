@@ -1,0 +1,58 @@
+[2.772s] Invoking command in '/workspace/src/my_pubsub': PYTHONPATH=/workspace/src/my_pubsub/build/my_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_pubsub build --build-base /workspace/src/my_pubsub/build/my_pubsub/build install --record /workspace/src/my_pubsub/build/my_pubsub/install.log --single-version-externally-managed install_data
+[3.902s] running egg_info
+[3.906s] writing build/my_pubsub/my_pubsub.egg-info/PKG-INFO
+[3.910s] writing dependency_links to build/my_pubsub/my_pubsub.egg-info/dependency_links.txt
+[3.911s] writing entry points to build/my_pubsub/my_pubsub.egg-info/entry_points.txt
+[3.912s] writing requirements to build/my_pubsub/my_pubsub.egg-info/requires.txt
+[3.913s] writing top-level names to build/my_pubsub/my_pubsub.egg-info/top_level.txt
+[3.920s] reading manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+[3.922s] adding license file 'LICENSE'
+[3.925s] writing manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+[3.925s] running build
+[3.926s] running build_py
+[3.927s] copying my_pubsub/testmotor.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.928s] copying my_pubsub/undt.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.928s] copying my_pubsub/undl.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.929s] copying my_pubsub/mytalker.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.930s] copying my_pubsub/talkermotor.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.930s] copying my_pubsub/read_PWM.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.931s] copying my_pubsub/listenmotor.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.931s] copying my_pubsub/mylistener.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[3.933s] running install
+[3.935s] running install_lib
+[3.939s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/testmotor.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.939s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/undt.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.940s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/undl.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.941s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/mytalker.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.941s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/talkermotor.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.941s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/read_PWM.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.942s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/listenmotor.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.943s] copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/mylistener.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[3.945s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/testmotor.py to testmotor.cpython-310.pyc
+[3.948s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/undt.py to undt.cpython-310.pyc
+[3.949s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/undl.py to undl.cpython-310.pyc
+[3.949s]   File "/workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/undt.py", line 21
+[3.949s]     if power =! -1:
+[3.950s]              ^
+[3.950s] SyntaxError: invalid syntax
+[3.951s] 
+[3.951s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/mytalker.py to mytalker.cpython-310.pyc
+[3.954s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/talkermotor.py to talkermotor.cpython-310.pyc
+[3.955s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/read_PWM.py to read_PWM.cpython-310.pyc
+[3.957s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/listenmotor.py to listenmotor.cpython-310.pyc
+[3.960s] byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/mylistener.py to mylistener.cpython-310.pyc
+[3.962s] running install_data
+[3.980s] running install_egg_info
+[3.988s] removing '/workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[3.990s] Copying build/my_pubsub/my_pubsub.egg-info to /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info
+[3.993s] running install_scripts
+[4.078s] Installing listener script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.080s] Installing listenmotor script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.080s] Installing read_PWM script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.081s] Installing talker script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.082s] Installing talkermotor script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.082s] Installing testmotor script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.083s] Installing undl script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.083s] Installing undt script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+[4.085s] writing list of installed files to '/workspace/src/my_pubsub/build/my_pubsub/install.log'
+[4.217s] Invoked command in '/workspace/src/my_pubsub' returned '0': PYTHONPATH=/workspace/src/my_pubsub/build/my_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_pubsub build --build-base /workspace/src/my_pubsub/build/my_pubsub/build install --record /workspace/src/my_pubsub/build/my_pubsub/install.log --single-version-externally-managed install_data

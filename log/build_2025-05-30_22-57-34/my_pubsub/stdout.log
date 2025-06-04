@@ -1,0 +1,51 @@
+running egg_info
+writing build/my_pubsub/my_pubsub.egg-info/PKG-INFO
+writing dependency_links to build/my_pubsub/my_pubsub.egg-info/dependency_links.txt
+writing entry points to build/my_pubsub/my_pubsub.egg-info/entry_points.txt
+writing requirements to build/my_pubsub/my_pubsub.egg-info/requires.txt
+writing top-level names to build/my_pubsub/my_pubsub.egg-info/top_level.txt
+reading manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+running build
+running build_py
+copying my_pubsub/testmotor.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/undt.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/undl.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/mytalker.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/talkermotor.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/read_PWM.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/listenmotor.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/mylistener.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+running install
+running install_lib
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/testmotor.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/undt.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/undl.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/mytalker.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/talkermotor.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/read_PWM.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/listenmotor.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/mylistener.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/testmotor.py to testmotor.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/undt.py to undt.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/undl.py to undl.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/mytalker.py to mytalker.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/talkermotor.py to talkermotor.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/read_PWM.py to read_PWM.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/listenmotor.py to listenmotor.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/mylistener.py to mylistener.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/my_pubsub/my_pubsub.egg-info to /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info
+running install_scripts
+Installing listener script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing listenmotor script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing read_PWM script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing talker script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing talkermotor script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing testmotor script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing undl script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing undt script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+writing list of installed files to '/workspace/src/my_pubsub/build/my_pubsub/install.log'

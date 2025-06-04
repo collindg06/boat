@@ -1,0 +1,40 @@
+running egg_info
+creating build/my_pubsub/my_pubsub.egg-info
+writing build/my_pubsub/my_pubsub.egg-info/PKG-INFO
+writing dependency_links to build/my_pubsub/my_pubsub.egg-info/dependency_links.txt
+writing entry points to build/my_pubsub/my_pubsub.egg-info/entry_points.txt
+writing requirements to build/my_pubsub/my_pubsub.egg-info/requires.txt
+writing top-level names to build/my_pubsub/my_pubsub.egg-info/top_level.txt
+writing manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+reading manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/src/my_pubsub/build/my_pubsub/build
+creating /workspace/src/my_pubsub/build/my_pubsub/build/lib
+creating /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/mytalker.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/__init__.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+copying my_pubsub/mylistener.py -> /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+running install
+running install_lib
+creating /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/mytalker.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/__init__.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+copying /workspace/src/my_pubsub/build/my_pubsub/build/lib/my_pubsub/mylistener.py -> /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/mytalker.py to mytalker.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/mylistener.py to mylistener.cpython-310.pyc
+running install_data
+creating /workspace/src/my_pubsub/install/my_pubsub/share/ament_index
+creating /workspace/src/my_pubsub/install/my_pubsub/share/ament_index/resource_index
+creating /workspace/src/my_pubsub/install/my_pubsub/share/ament_index/resource_index/packages
+copying resource/my_pubsub -> /workspace/src/my_pubsub/install/my_pubsub/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/src/my_pubsub/install/my_pubsub/share/my_pubsub
+running install_egg_info
+Copying build/my_pubsub/my_pubsub.egg-info to /workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info
+running install_scripts
+Installing listener script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+Installing talker script to /workspace/src/my_pubsub/install/my_pubsub/lib/my_pubsub
+writing list of installed files to '/workspace/src/my_pubsub/build/my_pubsub/install.log'

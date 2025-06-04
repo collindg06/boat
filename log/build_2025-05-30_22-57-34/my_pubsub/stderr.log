@@ -1,0 +1,5 @@
+  File "/workspace/src/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/undt.py", line 21
+    if power =! -1:
+             ^
+SyntaxError: invalid syntax
+
