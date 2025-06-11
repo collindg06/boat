@@ -11,7 +11,7 @@ from my_pubsub.read_PWM import reader
 pi = pigpio.pi()
 if not pi.connected:
     exit()
-
+print('listener boat controller')
 throttle_gpio = 12
 turn_gpio = 13
 rc_gpio = 18
