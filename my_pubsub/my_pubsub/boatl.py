@@ -115,17 +115,18 @@ class MotorController(Node):
         duty = r.duty_cycle()
         print(f"Freq: {freq:.1f} Hz | Pulse: {pulse:.1f} us | Duty: {duty:.1f}%")
 
-        if round(duty, 1) != 7.5 and not self.off:
+        # Treat both 7.5% and 0.0% duty as Pi control
+        if round(duty, 1) not in [7.5, 0.0] and not self.off:
             print("Remote control in use")
             pi.write(relay1_gpio, 1)
             pi.write(relay2_gpio, 1)
             self.off = True
 
-        elif round(duty, 1) == 7.5 and self.off:
+        elif round(duty, 1) in [7.5, 0.0] and self.off:
             time.sleep(0.5)
-            if round(r.duty_cycle(), 1) == 7.5:
+            if round(r.duty_cycle(), 1) in [7.5, 0.0]:
                 time.sleep(0.5)
-                if round(r.duty_cycle(), 1) == 7.5:
+                if round(r.duty_cycle(), 1) in [7.5, 0.0]:
                     print("Pi back in control")
                     pi.write(relay1_gpio, 0)
                     pi.write(relay2_gpio, 0)

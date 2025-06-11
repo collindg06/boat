@@ -15,9 +15,10 @@ class MotorCommandPublisher(Node):
 
     def timer_callback(self):
         if self.last_key:
-            self.msg.name[0] = self.last_key
-            self.msg.header.stamp = self.get_clock().now().to_msg()
-            self.publisher_.publish(self.msg)
+            msg = JointState()
+            msg.name = [self.last_key]
+            msg.header.stamp = self.get_clock().now().to_msg()
+            self.publisher_.publish(msg)
             self.get_logger().info(f'Sent key: {self.last_key}')
             self.last_key = ''
 
