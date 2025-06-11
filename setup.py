@@ -28,6 +28,8 @@ setup(
                 'undt  = my_pubsub.undt:main',
                 'undl = my_pubsub.undl:main',
                 'read_PWM = my_pubsub.read_PWM:main',
+                'boatt = my_pubsub.boatt:main',
+                'boatl = my_pubsub.boatl:main',
         ],
     },
 )

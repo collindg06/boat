@@ -15,20 +15,23 @@ if not pi.connected:
 throttle_gpio = 12
 turn_gpio = 13
 rc_gpio = 18
-relay_gpio = 16
+relay_gpio1 = 20
+relay_gpio2 = 21
 
 
 # Set the GPIO to servo mode
 pi.set_mode(throttle_gpio, pigpio.OUTPUT)
 pi.set_mode(turn_gpio, pigpio.OUTPUT)
-pi.set_mode(relay_gpio, pigpio.OUTPUT)
+pi.set_mode(relay_gpio1, pigpio.OUTPUT)
+pi.set_mode(relay_gpio2, pigpio.OUTPUT)
 
 
 # Read PWM on GPIO18
 r = reader(pi, rc_gpio)  
 
 # Set relay to pi
-pi.write(relay_gpio,0)
+pi.write(relay_gpio1,0)
+pi.write(relay_gpio2,0)
 
 pi.set_servo_pulsewidth(throttle_gpio, 1500)
 pi.set_servo_pulsewidth(turn_gpio, 1500)
@@ -63,7 +66,8 @@ class MinimalSubscriber(Node):
         else:
             self.control_active = False
             self.off = True
-            pi.write(relay_gpio, 1)
+            pi.write(relay_gpio1, 1)
+            pi.write(relay_gpio2, 1)
             pi.set_servo_pulsewidth(throttle_gpio, 1500)
             pi.set_servo_pulsewidth(turn_gpio, 1500)
 
@@ -77,7 +81,8 @@ class MinimalSubscriber(Node):
         print(f"Freq: {freq:.1f} Hz | Pulse: {pulse:.1f} µs | Duty: {duty:.1f}%")
 
         if round(duty, 1) != 7.5 and not self.off:
-            pi.write(relay_gpio, 1)
+            pi.write(relay_gpio1, 1)
+            pi.write(relay_gpio2, 1)
             print("Remote control being used")
             self.off = True
 
@@ -87,7 +92,8 @@ class MinimalSubscriber(Node):
                 time.sleep(1)
                 if round(r.duty_cycle(), 1) == 7.5:
                     print("Raspberry Pi in control")
-                    pi.write(relay_gpio, 0)
+                    pi.write(relay_gpio1, 0)
+                    pi.write(relay_gpio2, 0)
                     self.off = False
 
         pi.set_servo_pulsewidth(throttle_gpio, self.latest_power)
@@ -110,7 +116,8 @@ def main(args=None):
         time.sleep(0.5)
         pi.set_servo_pulsewidth(throttle_gpio, 0)
         pi.set_servo_pulsewidth(turn_gpio, 0)
-        pi.write(relay_gpio, 1)
+        pi.write(relay_gpio1, 1)
+        pi.write(relay_gpio2, 1)
 
         # Clean up pigpio
         r.cancel()
